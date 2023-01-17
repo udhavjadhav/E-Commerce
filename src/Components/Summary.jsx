@@ -14,20 +14,21 @@ function Summary({ }) {
   const [value, setValue] = useState(1);
   const Navigate = useNavigate();
 
-  const Increment = () =>{
-   
+  const Increment = (item) =>{
+   console.log(item);
     setValue(value+1);
-    if(item.Quantity < 20){
-      item.Quantity++
-      item.totalPrice = item.price * item.Quantity;
-    }
+  //   if(prod.Quantity < 20){
+  //     prod.Quantity++
+  //     prod.totalPrice = item.price * item.Quantity;
+  //     console.log(prod.id)
+    // }
   }
   const Decrement = () =>{
     setValue(value-1)
-    if(item.Quantity >= 1){
-      item.Quantity--
-      item.totalPrice = item.price * item.Quantity;
-    }
+    // if(prod.Quantity >= 1){
+    //   prod.Quantity--
+    //   prod.totalPrice = prod.price * prod.Quantity;
+    // }
   }
 
   //Local Storage
@@ -45,7 +46,7 @@ function Summary({ }) {
     cartArray.splice(index, 1);
     //Delete data from localstorage
     window.localStorage.setItem('wish-list', JSON.stringify(cartArray)); 
-    // Navigate('/summary');
+    Navigate('/summary');
     
     //Empty Cart
     if(cartArray.length < 1){
@@ -73,7 +74,7 @@ function Summary({ }) {
                 cartArray && cartArray.length > 0
                   ?
                   cartArray.map((item, prod) => {
-
+                    
                     return (
                       <tr key={prod}>
                         <td>
@@ -95,7 +96,7 @@ function Summary({ }) {
 
                         </td>
                         <td>
-                          <p>Rs: {item.totalPrice } INR</p>
+                          <p>Rs: {item.totalPrice * value} INR</p>
                         </td>
                         <td>
                           {/* <Link to={`/edit`}>

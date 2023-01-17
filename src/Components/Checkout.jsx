@@ -8,7 +8,7 @@ const Checkout = () =>{
     return(
         <>
        {/* <Navbar/> */}
-      <div className="container">
+      <div style={{maxWidth:'90%'}} className="container">
         <div style={{background: 'lightblue'}} className="border p-4 m-4 shadow">
         <h1 className="m-3 text-center">Proceed to checkout</h1>
             <h4 className="mb-3">Billing address</h4>

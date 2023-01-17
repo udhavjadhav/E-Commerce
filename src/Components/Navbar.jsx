@@ -43,7 +43,7 @@ stateLift(text)
                     }} />
                     <button className="btn btn-outline-info my-2 my-sm-0" type="submit"  >Search</button>
                 </form>
-                <div className="mx-3">
+                <div className="m-2">
                     <Badge color="primary" badgeContent={cartArray.length}>
                     <ShoppingCart style={{cursor: 'pointer', color: 'orange'}} fontSize='large' onClick = {handleClick} />
                     </Badge>
