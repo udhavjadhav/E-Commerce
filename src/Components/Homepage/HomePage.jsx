@@ -14,7 +14,7 @@ const HomePage = ({ prod, demo }) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        setTimeout(() => { setLoading(false) }, 1000)
+        setTimeout(() => { setLoading(false) }, 1500)
     }, [])
 
     const handelClick = () => {
@@ -41,10 +41,10 @@ const HomePage = ({ prod, demo }) => {
 
                     <div className='d-flex align-items-center'>
                         <div className="card m-2 text-center">
-                            <img style={{ height: '25vh', width: '25vh', margin: '3vh', marginLeft: '12vh' }} className="card-img-top" src={prod.image} alt="Card image cap" />
+                            <img style={{ height: '25vh', width: '25vh', margin: '3vh', marginLeft: '13vh' }} className="card-img-top" src={prod.image} alt="Card image cap" />
                             <div className="card-body">
-                                <p className='text-center'>{prod.title}</p>
-                                <h6 className="card-title text-center">Price: {prod.price} $</h6>
+                                <p className='text-center '>{prod.title}</p>
+                                <h6 className="card-title text-center font-weight-bold">${prod.price} </h6>
                                 <div className='text-center'>
                                     <Button variant="contained" startIcon={<ShoppingCart />} disabled={value == 1 ? false : true} onClick={handelClick}  >Add to Cart</Button>
                                     <Button variant="contained" sx={{ mx: 2 }} color='error' onClick={viewDetails} >View Details</Button>

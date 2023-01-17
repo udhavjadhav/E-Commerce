@@ -29,7 +29,7 @@ function ProductDetails({ }) {
     }, [])
 
     useEffect(() => {
-        setTimeout(() => { setLoading(false) }, 1200)
+        setTimeout(() => { setLoading(false) }, 2000)
     }, [])
 
     const Navigate = useNavigate();
