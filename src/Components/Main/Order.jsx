@@ -8,7 +8,7 @@ const Order = () => {
   return (
     <div className='container-fluid text-center'>
       {/* <CheckCircleIcon style={{height:'10vh', width:'10vh'}}/> */}
-      <img style={{height:'70vh',maxWidth:'90%'}} src="./src/assets/order.jpg" alt="loading" />
+      <img style={{height:'70vh',maxWidth:'90%'}} src="/assets/order.jpg" alt="loading" />
       <h1 style={{color: 'green', fontWeight: 'bolder'}} >Order Successful !!</h1>
       <h5>Thanks for Shopping :) </h5>
      <Link to='/'>

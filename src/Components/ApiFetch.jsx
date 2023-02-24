@@ -24,8 +24,6 @@ function ApiFetch({ demo, cartArray }) {
     const stateLift = (text) => {
         setText2(text)
     }
-    
-    
     return (
         <>
             <div>
@@ -50,9 +48,6 @@ function ApiFetch({ demo, cartArray }) {
                     })
                 }
             </div>
-            {/* <div style={{height:'10vh', width:'auto', background:"#05386B"}} className='container-fluid mt-5'>
-            <h5 style={{color:'white', textAlign:'center'}}>©Copyright 2022 Senwell. All Rights Reserved</h5>
-            </div> */}
         </>
 
     );

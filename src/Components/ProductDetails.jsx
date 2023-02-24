@@ -17,9 +17,6 @@ function ProductDetails({ }) {
     const [loading, setLoading] = useState(true);
     const [value, setValue] = useState(2); //Rating
 
-    // const [data, setData] = useState(0);
-
-    //Get Parameter from URL - useParam();
     const { id } = useParams()
     useEffect(() => {
         fetch(`https://fakestoreapi.com/products/${id}`)
@@ -94,9 +91,6 @@ function ProductDetails({ }) {
                         </div>
                     </div>
             }
-
-
-
         </>
     )
 }

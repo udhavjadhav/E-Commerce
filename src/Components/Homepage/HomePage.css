@@ -1,16 +1,13 @@
 .card{
-    display: inline-block;
+    display: grid;
     transition: transform .2s; 
     position: relative;
     border-radius: 10px;
-    overflow: hidden;
-    margin: auto;
+    margin: 10px;
     cursor: pointer;
-    width: 50vh;
-    max-width: 90%;
-    height: 50vh;
+    width: 45.5vh;
+    height: 45.5vh;
     z-index: 0;
-    /* border: 1px solid rgb(99, 99, 99);   */
 }
 .card:hover{
     transform: scale(1.1);

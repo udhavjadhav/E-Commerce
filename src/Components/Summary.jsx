@@ -7,8 +7,6 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Button from '@mui/material/Button';
 import AddIcon from '@mui/icons-material/Add';
 
-// import Navbar from './Navbar';
-
 function Summary({ }) {
   const [cartArray, setCartArray] = useState([]);
   const [value, setValue] = useState(1);
@@ -17,18 +15,9 @@ function Summary({ }) {
   const Increment = (item) =>{
    console.log(item);
     setValue(value+1);
-  //   if(prod.Quantity < 20){
-  //     prod.Quantity++
-  //     prod.totalPrice = item.price * item.Quantity;
-  //     console.log(prod.id)
-    // }
   }
   const Decrement = () =>{
     setValue(value-1)
-    // if(prod.Quantity >= 1){
-    //   prod.Quantity--
-    //   prod.totalPrice = prod.price * prod.Quantity;
-    // }
   }
 
   //Local Storage
@@ -38,8 +27,6 @@ function Summary({ }) {
   }, []);
 
   const handleDelete = (id) => {
-    // localStorage.removeItem('wish-list')
-  
     let index = cartArray.map((e) => {
       return e.id
     }).indexOf(id);

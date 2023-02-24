@@ -3,11 +3,9 @@ import './HomePage.css';
 import { ShoppingCart } from '@mui/icons-material';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
-
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import { SkeletonTheme } from 'react-loading-skeleton'
-
 
 const HomePage = ({ prod, demo }) => {
     const [value, setValue] = useState(1);
@@ -31,14 +29,13 @@ const HomePage = ({ prod, demo }) => {
                 loading
                     ?
                     <div className='card'>
-                        
+
                         <SkeletonTheme baseColor="#202020" highlightColor="#444">
                             <p>
                                 <Skeleton height={'54vh'} duration={2} />
                             </p>
                         </SkeletonTheme> </div>
                     :
-
                     <div className='d-flex align-items-center'>
                         <div className="card text-center">
                             <img style={{ height: '25vh', width: '25vh', margin: '3vh', marginLeft: '10vh' }} className="card-img-top" src={prod.image} alt="Card image cap" />

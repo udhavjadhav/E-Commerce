@@ -2,12 +2,9 @@ import { Link } from "react-router-dom";
 import Button from '@mui/material/Button';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
-
-
 const Checkout = () =>{
     return(
         <>
-       {/* <Navbar/> */}
       <div style={{maxWidth:'90%'}} className="container">
         <div style={{background: 'lightblue'}} className="border p-4 m-4 shadow">
         <h1 className="m-3 text-center">Proceed to checkout</h1>

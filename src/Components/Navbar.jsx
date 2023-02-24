@@ -5,8 +5,6 @@ import { useNavigate } from 'react-router-dom';
 
 const Navbar=({stateLift, cartArray}) => {
     const [text, setText] = useState("");
-    
-
     const Navigate = useNavigate()
     const handleClick = ()=>{
         if(cartArray.length < 1){
@@ -18,7 +16,6 @@ const Navbar=({stateLift, cartArray}) => {
     }
 
 stateLift(text)
-
     return (
         <div className="container-fluid p-2 shadow">
         <nav style={{ background: '#05386B' }} className="navbar navbar-expand-lg navbar-light p-2">
@@ -34,7 +31,6 @@ stateLift(text)
                     <li className="nav-item">
                         <a style={{color:'white', fontWeight: 'bolder'}} className="nav-link" href="/about">About</a>
                     </li>
-
                 </ul>
                 <form  className="form-inline d-flex mx-auto">
                     <input id='search' className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" 
@@ -47,7 +43,6 @@ stateLift(text)
                     <Badge color="primary" badgeContent={cartArray.length}>
                     <ShoppingCart style={{cursor: 'pointer', color: 'orange'}} fontSize='large' onClick = {handleClick} />
                     </Badge>
-                    
                 </div>
             </div>
         </nav>
