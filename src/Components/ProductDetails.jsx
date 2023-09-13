@@ -57,7 +57,7 @@ function ProductDetails({ }) {
                         </p>
                     </SkeletonTheme> </div>
                     :
-                    <div className="container-fluid mt-5 p-4 card mb-3" style={{ maxWidth: '100%', height: 'auto'}}>
+                    <div className="container-fluid mt-5 card mb-3" style={{ maxWidth: '100%', height: 'auto'}}>
                         <div className="row g-0">
                             <div className="col-lg-6">
                                 <img style={{ width: '50vh', height: '50vh' }} src={prod.image} className="img-fluid rounded-start mt-3" alt="loading" />
